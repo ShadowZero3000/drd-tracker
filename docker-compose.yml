@@ -1,0 +1,18 @@
+app_mongo:
+  container_name: app_mongo
+
+  image: mvertes/alpine-mongo
+  ports:
+    - 47017:27017
+
+tracker:
+  container_name: tracker
+  build: ./docker
+  ports:
+    - 80:8000
+  links:
+    - app_mongo
+  volumes:
+    - ./public:/var/www:rw
+  environment:
+      VIRTUAL_HOST: tracker.example.com
