@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"type": {
+			"name": "type",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "type",
+			"order": 1
+		},
+		"datetime": {
+			"name": "datetime",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "datetime",
+			"order": 2
+		},
+		"teamid": {
+			"name": "teamid",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "teamid",
+			"order": 3
+		},
+		"restrictToTeam": {
+			"name": "restrictToTeam",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "restrictToTeam",
+			"order": 4
+		}
+	}
+}

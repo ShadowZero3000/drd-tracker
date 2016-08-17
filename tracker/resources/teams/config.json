@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"members": {
+			"name": "members",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "members",
+			"order": 1
+		},
+		"slug": {
+			"name": "slug",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "slug",
+			"order": 2
+		},
+		"requirements": {
+			"name": "requirements",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "requirements",
+			"order": 3
+		}
+	}
+}

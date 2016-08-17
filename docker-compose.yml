@@ -7,12 +7,12 @@ app_mongo:
 
 tracker:
   container_name: tracker
-  build: ./docker
+  build: .
   ports:
     - 80:8000
   links:
     - app_mongo
   volumes:
-    - ./public:/var/www:rw
+    - ./tracker:/var/www:rw
   environment:
       VIRTUAL_HOST: tracker.example.com
